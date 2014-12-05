@@ -7,6 +7,11 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2014/15.
 Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
 napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
 
++ Tema mojega projekta je Uvoz in izvoz energetskih dobrin. Obravnaval bom podatke uvoza in izvoza nafte, zemelskega plina in elektrike za naketere večje in vplivnejše države (Amerika, Rusija, Združeno kraljestvo, Nemčija).
++ Cilj projekta bo ugotoviti katere države so najvplivneše na področju energetike.
++ Vse potrebne podateke bom črpal iz ene povezave:
++ 1. http://www.eia.gov/countries/data.cfm
+
 ## Program
 
 Glavni program se nahaja v datoteki `projekt.r`. Ko ga poženemo, se izvedejo
