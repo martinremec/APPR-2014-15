@@ -1,5 +1,5 @@
-Country/Good;Natura_gas_export_BCF;Natura_gas_import_BCF;Electricity_export_Billion _Kilowatthours;Electricity_import_Billion_Kilowatthours;Refined_Petroleum_export_Thousand_Barrels_Per_Day;Refined_Petroleum_import_Thousand_Barrels_Per_Day
-Germany;531,38481;3205,15409;61,77;41,67;530,65869;722,58975
-Russia;8257,3533;1984,703;20,738;3,105;1923,9247;21,34177
-UK;406,1225;1290,05695;1,272;12,294;735,58505;601,09995
-Unites States;963;3984;24,198;57,019;1773,02459;3132,04918
+Country/Good;Natural_gas_export_BCF;Natural_gas_import_BCF;Electricity_export_Billion_Kilowatthours;Electricity_import_Billion_Kilowatthours;Refined_Petroleum_export_Thousand_Barrels_Per_Day;Refined_Petroleum_import_Thousand_Barrels_Per_Day;Total_Primary_Energy_Production_Quadrillion_Btu;Total_Primary_Energy_Consumption_Quadrillion_Btu
+Germany;531,38481;3205,15409;61,77;41,67;530,65869;722,58975;5,08028;14,12785
+Russia;8257,3533;1984,703;20,738;3,105;1923,9247;21,34177;52,52268;29,62808
+UK;406,1225;1290,05695;1,272;12,294;735,58505;601,09995;6,93884;9,26858
+Unites States;963;3984;24,198;57,019;1773,02459;3132,04918;73,23283;99,29207
