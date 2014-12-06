@@ -1,7 +1,7 @@
-# setwd("branjePodatkov/")
+
 
 source("branjePodatkov/branjeCSV.r")
-# setwd("../")
+
 
 energy_stats_2008 <- branje.csv("CSVs/2008.csv", "Windows-1250", ";")
 energy_stats_2009 <- branje.csv("CSVs/2009.csv", "Windows-1250", ";")

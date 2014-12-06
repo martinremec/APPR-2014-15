@@ -1,4 +1,4 @@
-Country/Good;Natural_gas_export_BCF;Natural_gas_import_BCF;Electricity_export_Billion_Kilowatthours;Electricity_import_Billion_Kilowatthours;Refined_Petroleum_export_Thousand_Barrels_Per_Day;Refined_Petroleum_import_Thousand_Barrels_Per_Day;Total_Primary_Energy_Production_Quadrillion_Btu;
+Country/Good;Natural_gas_export_BCF;Natural_gas_import_BCF;Electricity_export_Billion_Kilowatthours;Electricity_import_Billion_Kilowatthours;Refined_Petroleum_export_Thousand_Barrels_Per_Day;Refined_Petroleum_import_Thousand_Barrels_Per_Day;Total_Primary_Energy_Production_Quadrillion_Btu;Total_Primary_Energy_Consumption_Quadrillion_Btu
 Germany;722,96868;3320,52819;57,917;42,962;375,35578;740,81978;4,85489;14,02753
 Russia;7407,32125;1341,97;19,091;1,644;2229,99764;57,94918;53,7411;29,7254
 UK;552,67975;1901,00645;4,481;7,144;679,34797;676,65899;6,18066;8,92321
