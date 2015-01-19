@@ -7,16 +7,50 @@
 \pagestyle{plain}
 
 \begin{document}
-\title{Poročilo pri predmetu \\
-Analiza podatkov s programom R}
-\author{Študent FMF}
-\maketitle
+\begin{titlepage}
 
-\section{Uvoz in izvoz energetskih dobrin}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\section{Uvoz csv tabel, ki prikazujujo uvoz in izvoz zemeljskega plina, elektrike in refinerirane nafte in agregatno proizvodnjo in portrošnjo energetike med Nemčijo, Rusijo, Veliko britanijo in ZDA. Dodani so tudi grafi, ki za vsako leto prikazujejo primerjave količin izvoza in uvoza, ter porabe in proizvodnje med vsemi državami.}
+\center
 
-\section{Analiza in vizualizacija podatkov}
+\textsc{\LARGE Fakulteta za matematiko in fiziko}\\[1.5cm]
+\textsc{\Large Poročilo pri predmetu}\\[0.5cm]
+\textsc{\large Analiza podatkov s programom R}\\[0.5cm]
+\HRule \\[0.4cm]
+{ \huge \bfseries Uvoz in izvoz energetskih dobrin}\\[0.4cm] 
+\HRule \\[1.5cm]
+
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Avtor:}\\
+Martin \textsc{Remec}
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Mentor:} \\
+Dr. Janoš \textsc{Vidali}
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large \today}\\[3cm] 
+\vfill
+
+\end{titlepage}
+
+
+\section{Izbira teme}
+
+Izbrana tema obsega uvoze in izvoze energetskih dobrin kot so elektrika, zemeljski plin in refinerirana nafta. Cijl tega projekta je ugotoviti katera iz med bolj vplivnih držav (Nemčija, Rusija, Velika britanija, ZDA) najbolj prisepva na trgu energetike.
+
+\pagebreak
+\section{Obdelava, uvoz in čiščenje podatkov}
+
+Uvoz csv tabel, ki prikazujujo uvoz in izvoz zemeljskega plina, elektrike in refinerirane nafte in agregatno proizvodnjo in portrošnjo energetike med Nemčijo, Rusijo, Veliko britanijo in ZDA. Dodani so tudi grafi, ki za vsako leto prikazujejo primerjave količin izvoza in uvoza, ter porabe in proizvodnje med vsemi državami.
+
+
 
 \includegraphics[width=\textwidth]{../slike/Electricity_imports_exports_2008.pdf}
 \includegraphics[width=\textwidth]{../slike/Electricity_imports_exports_2009.pdf}
@@ -33,6 +67,9 @@ Analiza podatkov s programom R}
 \includegraphics[width=\textwidth]{../slike/Refined_Petrolium_imports_exports_2010.pdf}
 \includegraphics[width=\textwidth]{../slike/Refined_Petrolium_imports_exports_2011.pdf}
 \includegraphics[width=\textwidth]{../slike/Refined_Petrolium_imports_exports_2012.pdf}
+
+Zgornji grafi prikazujejo meddržavne primerjave med uvozi in izvozi energetskih dobrin za vsako leto posebaj med 2008 in 2012. Grafov nisem moral združiti v agregatne količine uvozov in izvozov dobrin, saj se vsaka od dobin meri s svojo enoto.
+
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Consumption_Quadrillion_Btu_2008.pdf}
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Consumption_Quadrillion_Btu_2009.pdf}
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Consumption_Quadrillion_Btu_2010.pdf}
@@ -43,6 +80,21 @@ Analiza podatkov s programom R}
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Production_Quadrillion_Btu_2010.pdf}
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Production_Quadrillion_Btu_2011.pdf}
 \includegraphics[width=\textwidth]{../slike/Total_Primary_Energy_Production_Quadrillion_Btu_2012.pdf}
+
+Zgornji grafi prikazujejo celotno porabo in proizvodnjo energetski dobrin, iz katerih je lahko razvidno katere države so vodile v energetskem sektorju.
+
+\pagebreak
+
+\section{Analiza in vizualizacija podatkov}
+
+Pri analizi in vzualizaciji podatkov sem prvo upeljal zemljevid sveta -\verb|svet|, v katerega sem nato vključil svoje podatke. Zemljevide sem tako obdelal, da prikazujejo količine uvozov in izvozov v celotnem časovnem intervalu (2008-2012). To je prikazano z različnimi barvami oz. glede na količino uvozov ali izvozv se država primerno obrava glede na bravno lestvico, ki je tud dodana k zemljevidom.
+
+\includegraphics[width=\textwidth]{../slike/Uvoz_elektrike_2008_2012.pdf}
+\includegraphics[width=\textwidth]{../slike/Uvoz_refinerirane_nafte_2008_2012.pdf}
+\includegraphics[width=\textwidth]{../slike/Uvoz_zemeljskega_plina_2008_2012.pdf}
+\includegraphics[width=\textwidth]{../slike/Izvoz_elektrike_2008_2012.pdf}
+\includegraphics[width=\textwidth]{../slike/Izvoz_refinerirane_nafte_2008_2012.pdf}
+\includegraphics[width=\textwidth]{../slike/Izvoz_zemeljskega_plina_2008_2012.pdf}
 
 \section{Napredna analiza podatkov}
 
