@@ -15,48 +15,51 @@ barve <- apply(apply(a, 1, function(x) x/max(x)), 1, function(y) rgb(y[1], 0, y[
 #plot(svet, col=barve[drzave], main = 'Uvoz in izvoz elektrike 2012',legend("bottomleft", legend = c("Izvoz", "Uvoz"), fill = c("red", "blue")))
 koordinate <- coordinates(svet[m,])
 koordinate[2,1] <- koordinate[2,1] - 40
+koordinate[3,2] <- koordinate[3,2] + 7
+oznake <- c("DE", "RUS", "UK", "USA")
+velikosti <- c(0.6, 1, 0.6, 1)
 
 #Zemeljski plin 
-svet$gas_exports <- (m+k+r+u+v)[1,drzave]
+svet$gas_imports <- (m+k+r+u+v)[1,drzave]
 pdf("slike/Izvoz_zemeljskega_plina_2008_2012.pdf")
-print(spplot(svet, "gas_exports", ylim = c(0, 90),xlim=c(-130,80),
-             col.regions = topo.colors(100), main = "Izvoz zemeljskega plina 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+print(spplot(svet, "gas_imports", ylim = c(0, 90),xlim=c(-130,80),
+             col.regions = topo.colors(100), main = "Uvoz zemeljskega plina 2008-2012",
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 dev.off()
 
 svet$gas_imports <- (m+k+r+u+v)[2,drzave]
 pdf("slike/Uvoz_zemeljskega_plina_2008_2012.pdf")
 print(spplot(svet, "gas_imports", ylim = c(0, 90),xlim=c(-130,80),
              col.regions = terrain.colors(100), main = "Uvoz zemeljskega plina 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 dev.off()
 # Elektrika
 svet$electricity_exports <- (n+l+t+s+a)[1,drzave]
 pdf("slike/Izvoz_elektrike_2008_2012.pdf")
 print(spplot(svet, "electricity_exports", ylim = c(0, 90),xlim=c(-130,80),
              col.regions = topo.colors(100), main = "Izvoz elektrike 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 dev.off()
 
 svet$electricity_imports <- (n+l+t+s+a)[2,drzave]
 pdf("slike/Uvoz_elektrike_2008_2012.pdf")
 print(spplot(svet, "electricity_imports", ylim = c(0, 90),xlim=c(-130,80),
              col.regions = terrain.colors(100), main = "Uvoz elektrike 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 dev.off()
 # Refinerirana nafta
 svet$refined_petroleum_exports <- (o+j+e+d+b)[1,drzave]
 pdf("slike/Izvoz_refinerirane_nafte_2008_2012.pdf")
 print(spplot(svet, "refined_petroleum_exports", ylim = c(0, 90),xlim=c(-130,80),
              col.regions = topo.colors(100), main = "Izvoz refinerirane nafte 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 dev.off()
 
 svet$refined_petroleum_imports <- (o+j+e+d+b)[2,drzave]
 pdf("slike/Uvoz_refinerirane_nafte_2008_2012.pdf")
 print(spplot(svet, "refined_petroleum_imports", ylim = c(0, 90),xlim=c(-130,80),
              col.regions = terrain.colors(100), main = "Uvoz refinerirane nafte 2008-2012",
-             sp.layout = list(list("sp.text", koordinate, c("DE", "RUS", "UK", "USA")))))
+             sp.layout = list(list("sp.text", koordinate, oznake ,cex=velikosti))))
 
 dev.off()
 
